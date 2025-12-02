@@ -1,0 +1,41 @@
+/* Parâmetros iniciais para facilitar a construção */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Definindo a estrutura do body */
+
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+:root {
+    --altura-header: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: calc(width - margin);
+    height: var(--altura-header);
+    padding: 20px 10px 20px 20px;
+    background-color: #121212;
+}
+
+#logo_alusim {
+    width: auto;
+    height: calc( var(--altura-header) / 0.5);
+}
+
+.menu_infos > a {
+    color: #ffffff;
+    text-decoration: none underline;
+    padding: 15px 15px 15px 15px;
+}
