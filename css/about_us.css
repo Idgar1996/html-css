@@ -6,7 +6,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:;
 }
 
 /* Definindo a estrutura do body */
@@ -112,9 +111,32 @@
     text-indent: 30px;
 }
 
+.btns-aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
+.btn-aboutus {
+    font-family:"Cabin", sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 80px;
+    font-style: oblique;
+    border-radius: 12px;
+    background-color: #2f2f2f;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: underline;
+}
 
-
+.btn-aboutus:hover {
+    background-color: darkgrey;
+    transform: scale(1.05);
+    color: #2f2f2f;
+}
 
 
 
