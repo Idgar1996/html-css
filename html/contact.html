@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link href="../css/contact.css" rel="stylesheet"/>
     </head>
-    <body id="corpo">
+    <body class="corpo">
         <header  class="header">
             <img src="../imagens/logo_branco.png" alt="Logo Alusim" id="logo_alusim">
             <div id="links_topo" class="menu_infos">
@@ -19,12 +19,12 @@
         </header>
         <main class="main">
             <section class="section">
-                <div>
+                <div class="area-contatos">
                     <div  class="contatos-fone">
                         <div>
                             <img src="/imagens/icone-fone.png"     alt="icone telefone" class="icones">
                         </div>
-                        <div>
+                        <div class="espaco">
                             <h2>Telefone:</h2>
                             <p>(51) 99594-4991</p>
                         </div>
@@ -33,7 +33,7 @@
                         <div>
                             <img src="/imagens/icone-email.png" alt="icone e-mail" class="icones">
                         </div>
-                        <div>
+                        <div class="espaco">
                             <h2>E-mail:</h2>
                             <p>alusimesquadrias@gmail.com</p>
                         </div>
@@ -42,22 +42,33 @@
                         <div>
                             <img src="/imagens/icone-location.png" alt="icone localização" class="icones">
                         </div>
-                        <div>
+                        <div class="espaco">
                             <h2>Localização</h2>
-                            <a href="https://www.google.com/maps/place/Alusim+Esquadrias/@-29.4987323,-51.3538944,17.6z/data=!4m6!3m5!1s0x951bfff8fdbbc1f7:0x344e646a0ed3b3c1!8m2!3d-29.4986158!4d-51.3544233!16s%2Fg%2F11c2l13pcm?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Rua Irmão Weibert, 144 - Centro - Bom Princípio -RS</a>
+                            <a href="https://www.google.com/maps/place/Alusim+Esquadrias/@-29.4987323,-51.3538944,17.6z/data=!4m6!3m5!1s0x951bfff8fdbbc1f7:0x344e646a0ed3b3c1!8m2!3d-29.4986158!4d-51.3544233!16s%2Fg%2F11c2l13pcm?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="link">Rua Irmão Weibert, 144 - Centro - Bom Princípio -RS</a>
                         </div>
                     </div>
                 </div>    
                 <form class="mensagem">
                     <h2>Conte-nos um pouco sobre sua necessidade:</h2>
-                    <h3>Digite seu nome:</h3>
-                    <input type="text" name="nome" class="input">
-                    <h3>Digite seu e-mail:</h3>
-                    <input type="text" name="email" class="input">
-                    <h3>Deixei aqui sua mensagem</h3>
-                    <textarea name="mensagem" cols="60" rows="10" class="textarea">Digite aqui sua mensagem...</textarea>
+                    <div class="div-input">
+                        <h3>Digite seu nome:</h3>
+                        <input type="text" name="nome" class="input" placeholder="EX: João da Silva">
+                    </div>
+                    <div class="div-input">
+                        <h3>Digite seu e-mail:</h3>
+                        <input type="text" name="email" class="input" placeholder="seuemail@email.com">
+                    </div>
+                    <div class="div-input">
+                        <h3>Deixei aqui sua mensagem</h3>
+                        <textarea name="mensagem" cols="60" rows="10" class="textarea" placeholder="Digite aqui sua mensagem"></textarea>
+                    </div>
+                    <div class="area-botoes">
+                        <button type="reset" class="botao-reset">Limpar campos</button>
+                        <button type="submit" class="botao-enviar"><strong>Enviar mensagem</strong> </button>
+                    </div>
                 </form>
             </section>
+            
         </main>
         <footer id="rodape">
             <h3>© 2025 copyright. Todos os direitos reservados.</h3>
