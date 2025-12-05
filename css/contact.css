@@ -27,6 +27,7 @@
 .corpo {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     min-height: 100vh;
 }
 
@@ -37,9 +38,9 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    width: 100%;
+    width: 100;
     height: var(--altura-header);
-    padding: 20px 10px 20px 20px;
+    padding: 20px 60px 20px 20px;
     background-color: #2f2f2f;
 }
 
@@ -74,17 +75,26 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     width: 100vw;
     height: auto;
 }
 
+.area-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 80%;
+    padding: 20px 20px 30px 50px;
+}
 
+/* Desenvolvimento base da divisória do telefone */
 .contatos-fone {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    background-color: #00ffff;
+    align-items: center;
     width: 50vw;
     height: auto;
     padding: 20px;
@@ -92,12 +102,17 @@
     gap: 20px;
     text-decoration: none;
 }
+.espaco {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-
+/* Desenvolvimento base da divisória do email */
 .contatos-email {
     display: flex;
     flex-direction: row;
-    background-color: #00ffff;
+    align-items: center;
     width: 50vw;
     height: auto;
     padding: 20px;
@@ -106,51 +121,131 @@
     text-decoration: none;
 }
 
-
+/* Desenvolvimento base da divisória da localização */
 .contatos-localizacao {
     display: flex;
     flex-direction: row;
-    background-color: #00ffff;
+    align-items: center;
     width: 50vw;
     height: auto;
     padding: 20px;
     font-size: 26px;
     gap: 20px;
-    text-decoration: none;
 }
-
-
+.link {
+    color:#4169e1;
+    text-decoration: none underline;
+}
+.link:hover {
+    color: #2ea716;
+}
+/* Definindo a base da divisão voltada à mensagem do cliente */
 .mensagem {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #8a2ce2;
     width: 50vw;
     height: auto;
-    padding: 20px 30px 30px 20px;
+    padding: 20px 50px 30px 20px;
+    gap: 20px   
 }
-
+/* Customização do título da divisória */
 .mensagem > h2 {
-    font-family: "Monserrat", sans-serif;
-    font-size: 26px;
+    font-family: "Cabin", sans-serif;
+    font-size: 32px;
 }
+/* Separação e organização dos inputs de mensagem */
+.div-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 22px;
 
+}
+/* Desenvolvimento das entradas simples */
 .input {
     width: 300px;
-    height: 30px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #c9c7c7;
+    color: #2f2f2f;
+    padding: 0px 0px 0px 10px;
+    border-width: 2px;
+    box-shadow: 2px 2px 4px #2f2f2f;
+    font-size: 18px;
 }
-
+/* Desenvolvimento da área da mensagem */
 .textarea {
     color:#2f2f2f;
+    border-radius: 8px;
+    background-color: #c9c7c7;
+    padding: 10px 0px 0px 10px;
+    border-width: 2px;
+    box-shadow: 2px 2px 4px #2f2f2f;
+    font-size: 18px;
 }
-
+/* Customização dos ícones */
 .icones {
     width: 28px;
     height: 28px;
     flex-shrink: 0;
 }
+/* Customização da área dos botões */
+.area-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    gap: 16px;
+    padding: 0px 0px 0px 30px
+}
+/* Custimização dos botões */
+.botao-reset {
+    color: #ffffff;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color:#dc1414 ;
+    transition: background-color 0.3 ease, transform 0.2 ease;
+    text-decoration: underline;
+    background-image: linear-gradient(to bottom, #dc1414, #e93f3f);
+    border-width: 2px;
+    box-shadow: 2px 2px 4px #2f2f2f;
+    cursor: pointer;
+}
+.botao-reset:hover{
+    background-color:#e93f3f;
+    background-image: linear-gradient(to bottom, #e93f3f, #dc1414);
+    color: #ffffff;
+    transform: scale(1.05);
+}
 
+.botao-enviar {
+    color: #ffffff;
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+    background-color:#039203 ;
+    background-image: linear-gradient(to bottom, #039203, #00a700);
+    transition: background-color 0.3 ease, transform 0.2 ease;
+    text-decoration: underline;
+    border-width: 2px;
+    box-shadow: 2px 2px 4px #2f2f2f;
+    cursor: pointer;
+}
+.botao-enviar:hover {
+    background-color:#00a700;
+    background-image: linear-gradient(to bottom, #00a700, #039203);
+    color: #ffffff;
+    transform: scale(1.05);
+}
 
+/* ----------------------------------------- */
+/* Configuração geral do rodapé */
 #rodape {
     display: flex;
     justify-content: center;
