@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     font-family: "Cabin", sans-serif;
+    box-sizing: border-box;
 }
 
 /* Definindo a estrutura do body */
@@ -38,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
-    width: 100;
+    width: calc(width - margin);
     height: var(--altura-header);
     padding: 20px 60px 20px 20px;
     background-color: #2f2f2f;
@@ -47,7 +48,7 @@
 /* Definindo as características do logo no <header> */
 #logo_alusim {
     width: auto;
-    height: calc( var(--altura-header) / 0.5);
+    height: var(--altura-header);
 }
 
 /* Definindo as características dos menus superiores no <header> */
@@ -64,6 +65,8 @@
 /* Definindo os parâmetros base do <main> */
 .main {
     display: flex;
+    flex: 1;
+    max-height: calc(var(--altura-tela) - var(--altura-header - (--altura-rodape)));
     flex-direction: column;
     justify-content: center;
     width: 100%;

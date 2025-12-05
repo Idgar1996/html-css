@@ -6,13 +6,26 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Cabin", sans-serif;
+    box-sizing: border-box;
 }
 
 /* Definindo a estrutura do body */
 :root {
     --altura-header: 100px;
 }
+:root {
+    --altura-footer: 23px
+}
+:root {
+    --altura-tela: 100vw
+}
 
+.corpo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 .header {
     display: flex;
@@ -26,7 +39,7 @@
 
 #logo_alusim {
     width: auto;
-    height: calc( var(--altura-header) / 0.5);
+    height: var(--altura-header);
 }
 
 .menu_infos > a {
@@ -152,4 +165,5 @@
     background-color: #2f2f2f;
     color: #ffffff;
     font-family: "Cabin", sans-serif;
+    height: var(--altura-footer);
 }
