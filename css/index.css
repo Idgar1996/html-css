@@ -6,29 +6,48 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-/* Definindo a estrutura do body */
+:root{
+    --altura-tela: 100vw
+}
+
 :root {
     --altura-header: 100px;
 }
 
+:root{
+    --altura-rodape: 23px
+}
 
+/* Definindo os parâmetros base do <body> */
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* ----------------------------------------- */
+/* Definindo os parâmetros base do <header>  */
 .header {
     display: flex;
     justify-content: space-between;
     align-items:center;
     width: calc(width - margin);
     height: var(--altura-header);
-    padding: 20px 10px 20px 20px;
+    padding: 20px 60px 20px 20px;
     background-color: #2f2f2f;
 }
 
+/* Definindo as características do logo no <header> */
 #logo_alusim {
     width: auto;
-    height: calc( var(--altura-header) / 0.5);
+    height: var(--altura-header);
 }
 
+/* Definindo as características dos menus superiores no <header> */
 .menu_infos > a {
     color: #ffffff;
     text-decoration: none underline;
